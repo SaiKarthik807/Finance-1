@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Finance Explore</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="row p-0 m-0 proBanner" id="proBanner">
+        <div class="col-md-12 p-0 m-0">
+          <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
+            <div class="ps-lg-1">
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 font-weight-medium me-3 buy-now-text">Learn more with Finance Explore, To become</p>
+                <a href="#" target="index.html" class="btn me-2 buy-now-btn border-0">a Pro</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#"><i class="mdi mdi-home me-3 text-white"></i></a>
+              <button id="bannerClose" class="btn border-0 p-0">
+                <i class="mdi mdi-close text-white me-0"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href=" "><img src=" " alt="FinanceXplore" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="#"><img src=" " alt="FinanceXplore" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="assets/images/faces/face27.jpg" alt="( U )">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">User Name</h5>
+                  <span>FinanceXpolrer</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Profile</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">User Navigator</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="#">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Settings</span>
+            </a>
+          </li>
+          
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="#">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Couses </span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="#">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Quizes</span>
+            </a>
+          </li>
+          
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="#">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">help</span>
+            </a>
+          </li>
+          
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="#">
+              <span class="menu-icon mdi mdi-onepassword  text-info">
+                <i class="preview-icon bg-dark rounded-circle"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-1 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="#"><img src=" " alt="FinanceXpolre" /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-1 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="Search ">
+                </form>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">             
+              </li>
+            </ul> 
+            
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card corona-gradient-card">
+                  <div class="card-body py-0 px-0 px-sm-3">
+                    <div class="row align-items-center">
+                      <div class="col-4 col-sm-3 col-xl-2">
+                        <img src="assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="FinanceXpolre">
+                      </div><div><hr></div>
+                      
+        <div class="row">
+        <div class="col-md-4 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Course History</h4>
+              <canvas id="transaction-history" class="transaction-chart"></canvas>
+              <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
+                <div class="text-md-center text-xl-left">
+                  <h6 class="mb-1">Course 1</h6>
+                  <p class="text-muted mb-0">01 Jan 2024, 07:11 AM</p>
+                </div>
+                <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
+                  <h6 class="font-weight-bold mb-0">View</h6>
+                </div>
+              </div>
+              <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
+                <div class="text-md-center text-xl-left">
+                  <h6 class="mb-1">Course 2</h6>
+                  <p class="text-muted mb-0">07 Jan 2024, 09:18 AM</p>
+                </div>
+                <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
+                  <h6 class="font-weight-bold mb-0">View</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex flex-row justify-content-between">
+                <h4 class="card-title mb-1">Course Material</h4>
+                <p class="text-muted mb-1">view</p>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="preview-list">
+                    <div class="preview-item border-bottom">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-primary">
+                          <i class="mdi mdi-file-document"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content d-sm-flex flex-grow">
+                        <div class="flex-grow">
+                          <h6 class="preview-subject">Course 1</h6>
+                          <p class="text-muted mb-0">Topic 1, Topic 2, Topic 3 </p>
+                        </div>
+                        <div class="me-auto text-sm-right pt-2 pt-sm-0">
+                          <p class="text-muted">1 minute ago</p>
+                          <p class="text-muted mb-0">10 Topics, 10 Quizes </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview-item border-bottom">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-success">
+                          <i class="mdi mdi-cloud-download"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content d-sm-flex flex-grow">
+                        <div class="flex-grow">
+                          <h6 class="preview-subject">Course 2</h6>
+                          <p class="text-muted mb-0">Topic 1, Topic 2, Topic 3</p>
+                        </div>
+                        <div class="me-auto text-sm-right pt-2 pt-sm-0">
+                          <p class="text-muted">1 hour ago</p>
+                          <p class="text-muted mb-0">10 Topics, 10 Quizes </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview-item border-bottom">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-info">
+                          <i class="mdi mdi-clock"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content d-sm-flex flex-grow">
+                        <div class="flex-grow">
+                          <h6 class="preview-subject">Course 3</h6>
+                          <p class="text-muted mb-0">Topic 1, Topic 2, Topic 3</p>
+                        </div>
+                        <div class="me-auto text-sm-right pt-2 pt-sm-0">
+                          <p class="text-muted">1 hour ago</p>
+                          <p class="text-muted mb-0">10 Topics, 10 Quizes</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview-item border-bottom">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-danger">
+                          <i class="mdi mdi-email-open"></i>
+                        </div>                      </div>
+                      <div class="preview-item-content d-sm-flex flex-grow">
+                        <div class="flex-grow">
+                          <h6 class="preview-subject">Course 4</h6>
+                          <p class="text-muted mb-0">Topic 1, Topic 2, Topic 3</p>
+                        </div>
+                        <div class="me-auto text-sm-right pt-2 pt-sm-0">
+                          <p class="text-muted">2 hours ago </p>
+                          <p class="text-muted mb-0">10 Topics, 10 Quizes</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-warning">
+                          <i class="mdi mdi-chart-pie"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content d-sm-flex flex-grow">
+                        <div class="flex-grow">
+                          <h6 class="preview-subject">Course 5</h6>
+                          <p class="text-muted mb-0">Topic 1, Topic 2, Topic 3</p>
+                        </div>
+                        <div class="me-auto text-sm-right pt-2 pt-sm-0">
+                          <p class="text-muted">1 day ago</p>
+                          <p class="text-muted mb-0">11 Topics, 11 Quizes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div><hr></div>
+              </div>
+            </div>
+          </div>
+          </div> <hr>
+        </div>
+      </div>
+
+            <div class="row">
+              <div class="col-md-4 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="text-primary">Courses</h5>
+                    <div class="row">
+                      <div class="col-8 col-md-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h2 class="mb-0 ">Learn More</h2>
+                          <p class="text-primary ms-2 mb-0 font-weight-medium">99% +</p>
+                        </div>
+                        <h6 class="text-muted font-weight-normal">morethan 11 Million users</h6>
+                      </div> <hr>
+                      <div class="col-4 col-xl-12 col-xl-4 text-center text-md-right">
+                        <i class="icon-lg mdi mdi-codepen text-primary ms-auto"></i>
+                        <div class="progress progress-md portfolio-progress">
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"  aria-valuenow="21" aria-valuemin="1" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="text-success">Quizes</h5>
+                    <div class="row">
+                      <div class="col-8 col-md-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h2 class="mb-0">Competate </h2>
+                          <p class="text-success ms-2 mb-0 font-weight-medium">81%</p>
+                        </div>
+                        <h6 class="text-muted font-weight-normal"> morethan 1 Million users</h6>
+                      </div> <hr>
+                      <div class="col-4 col-xl-12 col-xl-4 text-center text-md-right">
+                        <i class="icon-lg mdi mdi-wallet-travel text-success ms-auto"></i>
+                        <div class="progress progress-md portfolio-progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 81%"  aria-valuenow="21" aria-valuemin="1" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="text-warning">Rewards & Badges</h5>
+                    <div class="row">
+                      <div class="col-8 col-md-12 col-xl-8 my-auto">
+                        <div class="d-flex d-md-block d-md-flex align-items-center">
+                          <h2 class="mb-0">Get Now</h2>
+                          <p class="text-warning ms-2 mb-0 font-weight-medium">77% + </p>
+                        </div>
+                        <h6 class="text-muted font-weight-normal">morethan 111K+ users</h6>
+                      </div> <hr>
+                      <div class="col-4 col-xl-12 col-xl-4 text-center text-md-right">
+                        <i class="icon-lg mdi mdi-monitor text-warning ms-auto"></i> 
+                        <div class="progress progress-md portfolio-progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 77%"  aria-valuenow="21" aria-valuemin="1" aria-valuemax="100"></div>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div> <div><hr></div>
+            </div> 
+
+             <div class="row">
+              <div class="end d-flex justify-content-center">
+              <div class="col-md-6 col-xl- grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex flex-row justify-content-between">
+                      <h4 class="card-title">Messages</h4>
+                      <p class="text-muted mb-1 small">View all</p>
+                    </div>
+                    <div class="preview-list">
+                      <div class="preview-item border-bottom">
+                        <div class="preview-thumbnail">
+                          <img src="assets/images/faces/face27.jpg" alt="image" class="rounded-circle" />
+                        </div>
+                        <div class="preview-item-content d-flex flex-grow">
+                          <div class="flex-grow">
+                            <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                              <h6 class="preview-subject">User1</h6>
+                              <p class="text-muted text-small">1 minute ago</p>
+                            </div>
+                            <p class="text-muted">Hi All, I completed my Courses</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="preview-item border-bottom">
+                        <div class="preview-thumbnail">
+                          <img src="assets/images/faces/face27.jpg" alt="image" class="rounded-circle" />
+                        </div>
+                        <div class="preview-item-content d-flex flex-grow">
+                          <div class="flex-grow">
+                            <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                              <h6 class="preview-subject">User2</h6>
+                              <p class="text-muted text-small">1 Minute Ago</p>
+                            </div>
+                            <p class="text-muted">Well, I completed too</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="preview-item border-bottom">
+                        <div class="preview-thumbnail">
+                          <img src="assets/images/faces/face27.jpg" alt="image" class="rounded-circle" />
+                        </div>
+                        <div class="preview-item-content d-flex flex-grow">
+                          <div class="flex-grow">
+                            <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                              <h6 class="preview-subject">User3</h6>
+                              <p class="text-muted text-small">1 Minute Ago</p>
+                            </div>
+                            <p class="text-muted">Ok Im also done</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="preview-item border-bottom">
+                        <div class="preview-thumbnail">
+                          <img src="assets/images/faces/face27.jpg" alt="image" class="rounded-circle" />
+                        </div>
+                        <div class="preview-item-content d-flex flex-grow">
+                          <div class="flex-grow">
+                            <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                              <h6 class="preview-subject">User4</h6>
+                              <p class="text-muted text-small">1 Minute Ago</p>
+                            </div>
+                            <p class="text-muted">Are you guys still learning</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+
+               <div class="end d-flex justify-content-center">
+                <div class="col-md-12 col-xl-11 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">To do list</h4>
+                      <div class="add-items d-flex">
+                        <input type="text" class="form-control todo-list-input" placeholder="Schedule tasks">
+                        <button class="add btn btn-primary todo-list-add-btn">Add</button>
+                      </div>
+                      <div class="list-wrapper">
+                        <ul class="d-flex flex-column-reverse text-white todo-list todo-list-custom">
+                          <li>
+                            <div class="form-check form-check-primary">
+                              <label class="form-check-label">
+                                <input class="checkbox" type="checkbox"> Improve new skillset </label>
+                            </div>
+                            <i class="remove mdi mdi-close-box"></i>
+                          </li>
+                          <li>
+                            <div class="form-check form-check-primary">
+                              <label class="form-check-label">
+                                <input class="checkbox" type="checkbox"> Meet with course mentor </label>
+                            </div>
+                            <i class="remove mdi mdi-close-box"></i>
+                          </li>
+                          <li class="completed">
+                            <div class="form-check form-check-primary">
+                              <label class="form-check-label">
+                                <input class="checkbox" type="checkbox" checked> chit chating in group  </label>
+                            </div>
+                            <i class="remove mdi mdi-close-box"></i>
+                          </li>
+                          <li>
+                            <div class="form-check form-check-primary">
+                              <label class="form-check-label">
+                                <input class="checkbox" type="checkbox">Weekend Plan on course revision</label>
+                            </div>
+                            <i class="remove mdi mdi-close-box"></i>
+                          </li>
+                          <li>
+                            <div class="form-check form-check-primary">
+                              <label class="form-check-label">
+                                <input class="checkbox" type="checkbox"> Work on latest quizes to grow skills </label>
+                            </div>
+                            <i class="remove mdi mdi-close-box"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+             <div class="end d-flex justify-content-center">
+              <div class="col-md-12 col-xl-7 grid-margin stretch-card">
+                <div class="card ">
+                  <div class="card-body">
+                    <h4 class="card-title"> User Portfolio's </h4>
+                    <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
+                      <div class="item">
+                        <img src="https://images.pexels.com/photos/6289030/pexels-photo-6289030.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Learn Finance">
+                      </div>
+                      <div class="item">
+                        <img src="https://images.pexels.com/photos/4968382/pexels-photo-4968382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Make Finance">
+                      </div>
+                      <div class="item">
+                        <img src="https://images.pexels.com/photos/6289028/pexels-photo-6289028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grow with FinanceXplore">
+                      </div>
+                    </div>
+                    <div class="d-flex py-5">
+                      <div class="preview-list w-100">
+                        <div class="preview-item p-0">
+                          <div class="preview-thumbnail">
+                            <img src="assets/images/faces/face27.jpg" class="rounded-circle" alt="( U )">
+                          </div>
+                          <div class="preview-item-content d-flex flex-grow">
+                            <div class="flex-grow">
+                              <div class="d-flex d-xl-block d-xl-flex justify-content-between"> 
+                                <h6 class="preview-subject">User 8</h6>
+                                <p class="text-muted text-small">View</p>
+                              </div>
+                              <p class="text-muted">I qualified on Course 1 & Course 2</p>
+                            </div>
+                          </div>
+                        </div> <hr>
+                        <p class="text-muted">Well, my learnings seems to be going better </p>
+                    <div class="progress progress-md portfolio-progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 91%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div> </div> 
+            </div>   
+          <!-- content-wrapper ends -->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
